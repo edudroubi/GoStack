@@ -1,9 +1,11 @@
 // Import libs
 const express = require('express');
+const cors = require('cors');
 const { uuid, isUuid } = require('uuidv4');
 
 // Set ambient vars
 const app = express();
+app.use(cors());
 const port = 3333;
 const projects = [];
 
